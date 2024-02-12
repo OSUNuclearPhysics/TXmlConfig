@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+
+
+    <bins name="pt" min="0" max="100" n="100" >
+        this is a string
+    </bins>
+    <bins name="eta" min="-1.2" max="1.2" n="100" />
+    <Histogram name="h1" title="h1;pT;counts" bins="100, 0, 100" />
+    <Histogram name="vtxX" title="h1;pT;counts" bins="100, -2, 2" />
+    <Histogram name="vtxZ" title="h1;pT;counts" bins="100, -10, 10" />
+
+    <Nested>
+        <Histogram name="h2" />
+        <Histogram name="h2" />
+        <Histogram name="h2" />
+        <Histogram name="h2" />
+        <Histogram name="h2" />
+        <Histogram name="h2" />
+    </Nested>
+
+    
+    <bins>
+        <vertexXY min="-5" max="5" nBins="100"  width="0.01" />
+        <maxxMin>0, 0.1, 0.7, 3.4, 9.7, 100</maxxMin>
+        <massMax> 0.1, 0.7, 3.4, 9.7, 100, 200</massMax>
+    </bins>
+
+</config>
