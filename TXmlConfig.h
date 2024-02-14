@@ -122,6 +122,7 @@ public:
         TXmlConfig::sstr.str("");
         TXmlConfig::sstr.clear();
         for ( auto kv : mNodes ){
+            if ( kv.second == TXmlConfig::valDNE ) continue;
             TXmlConfig::sstr << "[" << kv.first << "] = " << kv.second << endl;
         }
         return TXmlConfig::sstr.str();
